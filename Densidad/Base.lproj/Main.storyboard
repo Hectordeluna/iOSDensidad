@@ -176,11 +176,11 @@
             </objects>
             <point key="canvasLocation" x="3102" y="322"/>
         </scene>
-        <!--Problema-->
+        <!--Practicar-->
         <scene sceneID="fWY-uL-7Pq">
             <objects>
                 <navigationController id="JG7-Mf-Gi9" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Problema" image="second" id="CEi-zd-hrB"/>
+                    <tabBarItem key="tabBarItem" title="Practicar" image="second" id="CEi-zd-hrB"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="t90-G1-n5f">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -216,11 +216,11 @@
                                 <rect key="frame" x="43" y="247" width="291" height="336"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <mutableString key="text">La cantidad de masa en un determinado volumen de una sustancia o un objeto sólido
+                                <string key="text">La cantidad de masa en un determinado volumen de una sustancia o un objeto sólido
 La densidad sirve para comparar la cantidad de masa en un volumen específico.
 La densidad relativa sirve para comparar la densidad de un objeto o sustancia con la de referencia que en la mayoría de los casos es la densidad del agua que se utiliza como punto de referencia.
 Este conocimiento te puede servir en la vida diaria como saber, porque  flotas en la playa, el vuelo de los aviones, la flotabilidad de los barcos, los ingredientes de cocina
-</mutableString>
+</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>

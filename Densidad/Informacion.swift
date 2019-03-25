@@ -21,15 +21,15 @@ class Informacion: NSObject {
         problemas.append(problema)
         problema = Problema(titulo: "2 - Cilindro - Medio",redaccion: "Un cilindro tiene un diámetro de 15(cm) y una altura de 14(cm), mientras que la masa del líquido que contiene es de 250(g). Calcula su densidad", respuesta: 0.32)
         problemas.append(problema)
-        var tema = Tema(nombre: "Densidad", redaccion: "La densidad sirve para comparar la cantidad de masa en un volumen específico.", imagen: UIImage(named: "DensidadFormula")!, problemas: problemas)
+        let tema = Tema(nombre: "Densidad", redaccion: "La densidad sirve para comparar la cantidad de masa en un volumen específico.", imagen: UIImage(named: "DensidadFormula")!, problemas: problemas)
         localTema.append(tema)
         
-        problemas = [Problema]()
+        problemas.removeAll()
         
         problema = Problema(titulo: "1 - Daniel - Dificil",redaccion: "Daniel lleva una lata llena de un líquido. La lata tiene un diámetro de 12(cm) y una altura de 17(cm), mientras que la masa del líquido es de 400(g). Calcula su densidad relativa.", respuesta: 0.37)
         problemas.append(problema)
         
-        var tema2 = Tema(nombre: "Densidad relativa", redaccion: "La densidad relativa sirve para comparar la densidad de un objeto o sustancia con la de referencia que en la mayoría de los casos es la densidad del agua que se utiliza como punto de referencia.", imagen: UIImage(named: "DensidadRelativa")!, problemas: problemas)
+        let tema2 = Tema(nombre: "Densidad relativa", redaccion: "La densidad relativa sirve para comparar la densidad de un objeto o sustancia con la de referencia que en la mayoría de los casos es la densidad del agua que se utiliza como punto de referencia.", imagen: UIImage(named: "DensidadRelativa")!, problemas: problemas)
             localTema.append(tema2)
         return localTema
 /*
