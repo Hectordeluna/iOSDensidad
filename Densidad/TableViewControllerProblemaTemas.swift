@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TableViewControllerProblema: UITableViewController {
+class TableViewControllerProblemaTemas: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,7 +35,7 @@ class TableViewControllerProblema: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "idCell", for: indexPath)
 
-        cell.textLabel?.text = "Dummy Cell"
+        cell.textLabel?.text = "Dummy Cell Temario Problemas"
 
         return cell
     }
