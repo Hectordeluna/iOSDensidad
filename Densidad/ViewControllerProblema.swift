@@ -10,11 +10,21 @@ import UIKit
 
 class ViewControllerProblema: UIViewController {
 
+    @IBOutlet weak var imgProblema: UIImageView!
+    @IBOutlet weak var txtPregunta: UITextView!
+    @IBOutlet weak var tfRespuesta: UITextField!
+    @IBOutlet weak var lblSolucion: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
+    
+    @IBAction func probarRespuesta(_ sender: Any) {
+    }
+    
     
 
     /*

@@ -10,13 +10,16 @@ import UIKit
 
 class ViewControllerEstudiar: UIViewController {
 
+    @IBOutlet weak var lblTituloTema: UILabel!
+    @IBOutlet weak var imgTema: UIImageView!
+    @IBOutlet weak var txtInformacion: UITextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
     
-
     /*
     // MARK: - Navigation
 
