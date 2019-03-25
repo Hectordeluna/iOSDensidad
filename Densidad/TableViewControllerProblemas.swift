@@ -9,6 +9,8 @@
 import UIKit
 
 class TableViewControllerProblemas: UITableViewController {
+    
+    var problemas = [Problema]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,6 +20,7 @@ class TableViewControllerProblemas: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        
     }
 
     // MARK: - Table view data source
@@ -29,13 +32,13 @@ class TableViewControllerProblemas: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 1
+        return problemas.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "idCell", for: indexPath)
 
-        cell.textLabel?.text = "Dummy Cell Problema"
+        cell.textLabel?.text = problemas[indexPath.row].titulo
 
         return cell
     }
@@ -75,14 +78,19 @@ class TableViewControllerProblemas: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
+        let vista = segue.destination as! ViewControllerProblema
+        if let index = tableView.indexPathForSelectedRow {
+            vista.pregunta = problemas[index.row].redaccion
+            vista.respuesta = problemas[index.row].respuesta
+        }
     }
-    */
+    
 
 }

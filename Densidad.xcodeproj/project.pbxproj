@@ -18,6 +18,9 @@
 		4772B9F52248655200C7AEF9 /* ViewControllerProblema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4772B9F42248655200C7AEF9 /* ViewControllerProblema.swift */; };
 		4772B9F72248655C00C7AEF9 /* TableViewControllerProblemaTemas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4772B9F62248655C00C7AEF9 /* TableViewControllerProblemaTemas.swift */; };
 		4772B9F92248681700C7AEF9 /* TableViewControllerProblemas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4772B9F82248681700C7AEF9 /* TableViewControllerProblemas.swift */; };
+		996476102248772600273227 /* Problema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9964760F2248772600273227 /* Problema.swift */; };
+		9964761222487A8B00273227 /* Tema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9964761122487A8B00273227 /* Tema.swift */; };
+		9964761422487B9300273227 /* Informacion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9964761322487B9300273227 /* Informacion.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +58,9 @@
 		4772B9F42248655200C7AEF9 /* ViewControllerProblema.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerProblema.swift; sourceTree = "<group>"; };
 		4772B9F62248655C00C7AEF9 /* TableViewControllerProblemaTemas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewControllerProblemaTemas.swift; sourceTree = "<group>"; };
 		4772B9F82248681700C7AEF9 /* TableViewControllerProblemas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewControllerProblemas.swift; sourceTree = "<group>"; };
+		9964760F2248772600273227 /* Problema.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problema.swift; sourceTree = "<group>"; };
+		9964761122487A8B00273227 /* Tema.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tema.swift; sourceTree = "<group>"; };
+		9964761322487B9300273227 /* Informacion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Informacion.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +113,9 @@
 			children = (
 				4772B9C022485EAA00C7AEF9 /* AppDelegate.swift */,
 				4772B9C622485EAA00C7AEF9 /* Main.storyboard */,
+				9964761322487B9300273227 /* Informacion.swift */,
+				9964761122487A8B00273227 /* Tema.swift */,
+				9964760F2248772600273227 /* Problema.swift */,
 				4772B9F62248655C00C7AEF9 /* TableViewControllerProblemaTemas.swift */,
 				4772B9F82248681700C7AEF9 /* TableViewControllerProblemas.swift */,
 				4772B9F42248655200C7AEF9 /* ViewControllerProblema.swift */,
@@ -269,9 +278,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				4772B9F52248655200C7AEF9 /* ViewControllerProblema.swift in Sources */,
+				9964761422487B9300273227 /* Informacion.swift in Sources */,
 				4772B9F3224863C700C7AEF9 /* ViewControllerEstudiar.swift in Sources */,
 				4772B9F1224863B300C7AEF9 /* TableViewControllerEstudiar.swift in Sources */,
 				4772B9F92248681700C7AEF9 /* TableViewControllerProblemas.swift in Sources */,
+				9964761222487A8B00273227 /* Tema.swift in Sources */,
+				996476102248772600273227 /* Problema.swift in Sources */,
 				4772B9F72248655C00C7AEF9 /* TableViewControllerProblemaTemas.swift in Sources */,
 				4772B9C122485EAA00C7AEF9 /* AppDelegate.swift in Sources */,
 			);

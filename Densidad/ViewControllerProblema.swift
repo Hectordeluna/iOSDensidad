@@ -15,14 +15,34 @@ class ViewControllerProblema: UIViewController {
     @IBOutlet weak var tfRespuesta: UITextField!
     @IBOutlet weak var lblSolucion: UILabel!
     
+    var pregunta : String!
+    var respuesta : Double!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        txtPregunta.text = pregunta
+        lblSolucion.text = String(describing: respuesta)
     }
     
     @IBAction func probarRespuesta(_ sender: Any) {
+        if let num = Double(tfRespuesta.text!) {
+            if num == respuesta {
+                let alert = UIAlertController(title: "Respuesta correcta!", message: "", preferredStyle: .alert)
+                
+                alert.addAction(UIAlertAction(title: "Yay", style: .default, handler: nil))
+                
+                self.present(alert, animated: true)
+            } else {
+                let alert = UIAlertController(title: "Respuesta incorrecta!", message: "Vuelvelo a intentar!", preferredStyle: .alert)
+                
+                alert.addAction(UIAlertAction(title: "Intentar", style: .default, handler: nil))
+                
+                self.present(alert, animated: true)
+            }
+        }
     }
     
     

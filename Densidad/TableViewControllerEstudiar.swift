@@ -10,6 +10,10 @@ import UIKit
 
 class TableViewControllerEstudiar: UITableViewController {
     
+    
+    var temas = [Tema]()
+    var info : Informacion!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -18,6 +22,8 @@ class TableViewControllerEstudiar: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        info = Informacion()
+        temas = info.getTemas()
     }
 
     // MARK: - Table view data source
@@ -29,13 +35,13 @@ class TableViewControllerEstudiar: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 1
+        return temas.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "idCell", for: indexPath)
 
-        cell.textLabel?.text = "Dummy Cell Temario"
+        cell.textLabel?.text = temas[indexPath.row].nombre
 
         return cell
     }
@@ -75,14 +81,22 @@ class TableViewControllerEstudiar: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
+        
+        let vista = segue.destination as! ViewControllerEstudiar
+        if let index = tableView.indexPathForSelectedRow {
+            vista.imagen = temas[index.row].imagen
+            vista.titulo = temas[index.row].nombre
+            vista.informacion = temas[index.row].redaccion
+        }
+        
     }
-    */
+    
 
 }
