@@ -193,6 +193,49 @@
             </objects>
             <point key="canvasLocation" x="754" y="323"/>
         </scene>
+        <!--Examen-->
+        <scene sceneID="aLs-pj-pqr">
+            <objects>
+                <viewController id="X9T-SS-guF" customClass="ViewControllerExamen" customModule="Densidad" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cst-7h-suC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Examen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kuC-Ic-tuD">
+                                <rect key="frame" x="127" y="189" width="120" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ri0-pm-YBH">
+                                <rect key="frame" x="164" y="256" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Iniciar"/>
+                                <connections>
+                                    <segue destination="EH8-e3-ej6" kind="show" id="18K-JB-qUL"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Pz-v4-i33">
+                                <rect key="frame" x="94" y="351" width="186" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="q7h-Zs-kFm"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Examen" id="CD5-9g-cWy"/>
+                    <connections>
+                        <outlet property="lbPuntaje" destination="3Pz-v4-i33" id="i7s-D1-45b"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aJB-f2-Sb4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="748" y="1013.3433283358322"/>
+        </scene>
         <!--View Controller Estudiar-->
         <scene sceneID="yuK-aK-E0X">
             <objects>
@@ -267,6 +310,7 @@ Este conocimiento te puede servir en la vida diaria como saber, porque  flotas e
                     <connections>
                         <segue destination="8ky-Qe-qVV" kind="relationship" relationship="viewControllers" id="J9b-Fe-EFh"/>
                         <segue destination="JG7-Mf-Gi9" kind="relationship" relationship="viewControllers" id="Vhg-Fy-qVz"/>
+                        <segue destination="X9T-SS-guF" kind="relationship" relationship="viewControllers" id="gDo-1f-wx2"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
@@ -279,4 +323,7 @@ Este conocimiento te puede servir en la vida diaria como saber, porque  flotas e
         <image name="first" width="30" height="30"/>
         <image name="second" width="30" height="30"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="18K-JB-qUL"/>
+    </inferredMetricsTieBreakers>
 </document>

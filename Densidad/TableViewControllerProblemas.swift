@@ -87,8 +87,7 @@ class TableViewControllerProblemas: UITableViewController {
         // Pass the selected object to the new view controller.
         let vista = segue.destination as! ViewControllerProblema
         if let index = tableView.indexPathForSelectedRow {
-            vista.pregunta = problemas[index.row].redaccion
-            vista.respuesta = problemas[index.row].respuesta
+            vista.problemas.append(problemas[index.row])
         }
     }
     
