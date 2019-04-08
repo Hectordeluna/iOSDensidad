@@ -16,6 +16,9 @@ class ViewControllerExamen: UIViewController, examenProblem {
     var info : Informacion!
     
     @IBOutlet weak var lbPuntaje: UILabel!
+    @IBOutlet weak var lbCalif: UILabel!
+    
+    @IBOutlet weak var btInicio: UIButton!
     
     var cantidad = 5
     var puntaje : Double!
@@ -29,11 +32,13 @@ class ViewControllerExamen: UIViewController, examenProblem {
         for tema in temas {
             problemas += tema.problemas
         }
+        btInicio.layer.cornerRadius = 10
+        btInicio.layer.borderWidth = 0
     }
     
     func calificacion(calif : Double) {
         puntaje = calif
-        lbPuntaje.text = "Calificacion: " + String(describing: puntaje!)
+        lbCalif.text = String(describing: puntaje!)
 
     }
 
