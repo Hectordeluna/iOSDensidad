@@ -23,6 +23,7 @@
 		996476102248772600273227 /* Problema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9964760F2248772600273227 /* Problema.swift */; };
 		9964761222487A8B00273227 /* Tema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9964761122487A8B00273227 /* Tema.swift */; };
 		9964761422487B9300273227 /* Informacion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9964761322487B9300273227 /* Informacion.swift */; };
+		99BB77DA225ABD3B000446C1 /* ViewControllerExamen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BB77D9225ABD3A000446C1 /* ViewControllerExamen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		9964760F2248772600273227 /* Problema.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problema.swift; sourceTree = "<group>"; };
 		9964761122487A8B00273227 /* Tema.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tema.swift; sourceTree = "<group>"; };
 		9964761322487B9300273227 /* Informacion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Informacion.swift; sourceTree = "<group>"; };
+		99BB77D9225ABD3A000446C1 /* ViewControllerExamen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerExamen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,8 +119,12 @@
 			children = (
 				4772B9C022485EAA00C7AEF9 /* AppDelegate.swift */,
 				4772B9C622485EAA00C7AEF9 /* Main.storyboard */,
+<<<<<<< HEAD
 				6385036D225AD7B700E54D22 /* Sustancia.swift */,
 				6385036B225AD2E100E54D22 /* PlaygroundViewController.swift */,
+=======
+				99BB77D9225ABD3A000446C1 /* ViewControllerExamen.swift */,
+>>>>>>> 574af8c3746dee9528ad2025cc5ed779e86bc822
 				9964761322487B9300273227 /* Informacion.swift */,
 				9964761122487A8B00273227 /* Tema.swift */,
 				9964760F2248772600273227 /* Problema.swift */,
@@ -285,6 +291,7 @@
 			files = (
 				4772B9F52248655200C7AEF9 /* ViewControllerProblema.swift in Sources */,
 				9964761422487B9300273227 /* Informacion.swift in Sources */,
+				99BB77DA225ABD3B000446C1 /* ViewControllerExamen.swift in Sources */,
 				4772B9F3224863C700C7AEF9 /* ViewControllerEstudiar.swift in Sources */,
 				6385036C225AD2E100E54D22 /* PlaygroundViewController.swift in Sources */,
 				4772B9F1224863B300C7AEF9 /* TableViewControllerEstudiar.swift in Sources */,
