@@ -42,7 +42,7 @@ class ViewControllerProblema: UIViewController {
         if let num = Double(tfRespuesta.text!) {
             if num == respuesta {
                 if examen {
-                    puntaje = puntaje + Double((100 / problemas.count))
+                    puntaje = puntaje + Double((100.0 / Double(problemas.count)))
                     print(puntaje)
                     numero = numero + 1
                     cargarPregunta()

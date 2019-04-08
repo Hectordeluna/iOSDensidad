@@ -213,7 +213,7 @@
         <scene sceneID="fWY-uL-7Pq">
             <objects>
                 <navigationController id="JG7-Mf-Gi9" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Practicar" image="second" id="CEi-zd-hrB"/>
+                    <tabBarItem key="tabBarItem" title="Practicar" image="pencil" selectedImage="pencil" id="CEi-zd-hrB"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="t90-G1-n5f">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -261,7 +261,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wXJ-GN-5rw">
-                                <rect key="frame" x="18" y="260" width="128" height="81"/>
+                                <rect key="frame" x="16" y="260" width="128" height="81"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
                                 <nil key="highlightedColor"/>
@@ -270,7 +270,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="q7h-Zs-kFm"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Examen" id="CD5-9g-cWy"/>
+                    <tabBarItem key="tabBarItem" title="Examen" image="list" selectedImage="list" id="CD5-9g-cWy"/>
                     <connections>
                         <outlet property="btInicio" destination="ri0-pm-YBH" id="F9L-5o-tpV"/>
                         <outlet property="lbCalif" destination="wXJ-GN-5rw" id="tn1-Ly-exj"/>
@@ -418,7 +418,7 @@ Este conocimiento te puede servir en la vida diaria como saber, porque  flotas e
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="PTm-xT-G8K"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Playground" selectedImage="second" id="huw-TU-Vb2"/>
+                    <tabBarItem key="tabBarItem" title="Playground" image="dashboard" selectedImage="dashboard" id="huw-TU-Vb2"/>
                     <connections>
                         <outlet property="Contenedor" destination="mQT-uS-tlL" id="sFS-Od-ebd"/>
                         <outlet property="pdensidad" destination="y7o-jw-pz5" id="eaA-ou-WCc"/>
@@ -435,7 +435,7 @@ Este conocimiento te puede servir en la vida diaria como saber, porque  flotas e
         <scene sceneID="Tw5-Cw-lcJ">
             <objects>
                 <navigationController id="8ky-Qe-qVV" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Estudiar" image="first" id="dyd-Sg-jYY"/>
+                    <tabBarItem key="tabBarItem" title="Estudiar" image="literature" selectedImage="literature" id="dyd-Sg-jYY"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Nwe-A7-2aZ">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -471,8 +471,10 @@ Este conocimiento te puede servir en la vida diaria como saber, porque  flotas e
     </scenes>
     <resources>
         <image name="DensidadFormula" width="37.919998168945312" height="25.920000076293945"/>
-        <image name="first" width="30" height="30"/>
-        <image name="second" width="30" height="30"/>
+        <image name="dashboard" width="30" height="30"/>
+        <image name="list" width="30" height="30"/>
+        <image name="literature" width="30" height="30"/>
+        <image name="pencil" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="18K-JB-qUL"/>

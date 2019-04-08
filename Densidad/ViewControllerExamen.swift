@@ -34,12 +34,23 @@ class ViewControllerExamen: UIViewController, examenProblem {
         }
         btInicio.layer.cornerRadius = 10
         btInicio.layer.borderWidth = 0
+        
+        lbCalif.layer.cornerRadius = 10
+        lbCalif.layer.borderWidth = 0
     }
     
     func calificacion(calif : Double) {
-        puntaje = calif
+        puntaje = round(calif)
         lbCalif.text = String(describing: puntaje!)
-
+        /*
+        if puntaje < 70 {
+            lbCalif.backgroundColor = .red
+        }
+        else {
+            lbCalif.backgroundColor = .green
+        }
+        */
+        
     }
 
     
