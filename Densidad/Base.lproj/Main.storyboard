@@ -409,7 +409,6 @@ Este conocimiento te puede servir en la vida diaria como saber, porque  flotas e
                         <segue destination="8ky-Qe-qVV" kind="relationship" relationship="viewControllers" id="J9b-Fe-EFh"/>
                         <segue destination="JG7-Mf-Gi9" kind="relationship" relationship="viewControllers" id="Vhg-Fy-qVz"/>
                         <segue destination="HXw-Ts-HQT" kind="relationship" relationship="viewControllers" id="ckq-Db-JQs"/>
-=======
                         <segue destination="X9T-SS-guF" kind="relationship" relationship="viewControllers" id="gDo-1f-wx2"/>
                     </connections>
                 </tabBarController>

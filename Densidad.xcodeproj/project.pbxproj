@@ -119,12 +119,9 @@
 			children = (
 				4772B9C022485EAA00C7AEF9 /* AppDelegate.swift */,
 				4772B9C622485EAA00C7AEF9 /* Main.storyboard */,
-<<<<<<< HEAD
 				6385036D225AD7B700E54D22 /* Sustancia.swift */,
 				6385036B225AD2E100E54D22 /* PlaygroundViewController.swift */,
-=======
 				99BB77D9225ABD3A000446C1 /* ViewControllerExamen.swift */,
->>>>>>> 574af8c3746dee9528ad2025cc5ed779e86bc822
 				9964761322487B9300273227 /* Informacion.swift */,
 				9964761122487A8B00273227 /* Tema.swift */,
 				9964760F2248772600273227 /* Problema.swift */,
