@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>nombre</key>
+		<string>Densidad</string>
+		<key>redaccion</key>
+		<string>La densidad sirve para comparar la cantidad de masa en un volumen específico.</string>
+		<key>imagen</key>
+		<string>DensidadFormula</string>
+		<key>Problemas</key>
+		<array>
+			<dict>
+				<key>titulo</key>
+				<string>1 - Juan - Facil</string>
+				<key>redaccion</key>
+				<string>Juan trabaja en un laboratorio calculando la densidad de ciertos objetos. Él tiene que calcular la densidad de un objeto cuyo peso es 350(g) y su capacidad es de 700 (cm³) ¿Cuál es la densidad del objeto?</string>
+				<key>respuesta</key>
+				<real>0.33</real>
+			</dict>
+			<dict>
+				<key>titulo</key>
+				<string>2 - Cilindro - Medio</string>
+				<key>redaccion</key>
+				<string>Un cilindro tiene un diámetro de 15(cm) y una altura de 14(cm), mientras que la masa del líquido que contiene es de 250(g). Calcula su densidad</string>
+				<key>respuesta</key>
+				<real>0.32</real>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>nombre</key>
+		<string>Densidad Relativa</string>
+		<key>redaccion</key>
+		<string>La densidad relativa sirve para comparar la densidad de un objeto o sustancia con la de referencia que en la mayoría de los casos es la densidad del agua que se utiliza como punto de referencia.</string>
+		<key>imagen</key>
+		<string>DensidadRelativa</string>
+		<key>Problemas</key>
+		<array>
+			<dict>
+				<key>titulo</key>
+				<string>1 - Daniel - Dificil</string>
+				<key>redaccion</key>
+				<string>Daniel lleva una lata llena de un líquido. La lata tiene un diámetro de 12(cm) y una altura de 17(cm), mientras que la masa del líquido es de 400(g). Calcula su densidad relativa.</string>
+				<key>respuesta</key>
+				<real>0.37</real>
+			</dict>
+		</array>
+	</dict>
+</array>
+</plist>

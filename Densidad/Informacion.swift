@@ -17,20 +17,34 @@ class Informacion: NSObject {
     func getTemas() -> [Tema] {
         var localTema = [Tema]()
         var problemas = [Problema]()
-        var problema = Problema(titulo: "1 - Juan - Facil",redaccion: "Juan trabaja en un laboratorio calculando la densidad de ciertos objetos. Él tiene que calcular la densidad de un objeto cuyo peso es 350(g) y su capacidad es de 700 (cm³) ¿Cuál es la densidad del objeto?", respuesta: 0.33)
-        problemas.append(problema)
-        problema = Problema(titulo: "2 - Cilindro - Medio",redaccion: "Un cilindro tiene un diámetro de 15(cm) y una altura de 14(cm), mientras que la masa del líquido que contiene es de 250(g). Calcula su densidad", respuesta: 0.32)
-        problemas.append(problema)
-        let tema = Tema(nombre: "Densidad", redaccion: "La densidad sirve para comparar la cantidad de masa en un volumen específico.", imagen: UIImage(named: "DensidadFormula")!, problemas: problemas)
-        localTema.append(tema)
+        var arrDiccionarios: NSArray!
+        let path = Bundle.main.path(forResource: "Preguntas", ofType: "plist")
+        arrDiccionarios = NSArray(contentsOfFile: path!)
         
-        problemas.removeAll()
+        for i in 0...arrDiccionarios.count-1 {
+            let dicc = arrDiccionarios[i] as! NSDictionary
+            let nombre = (dicc.value(forKey: "nombre") as! String)
+            let redaccion = (dicc.value(forKey: "redaccion") as! String)
+            let imagen = (dicc.value(forKey: "imagen") as! String)
+            
+            var arrProblemas: NSArray!
+            arrProblemas = (dicc.value(forKey: "Problemas") as! NSArray)
+            for j in 0...arrProblemas.count-1 {
+                let diccProblema = arrProblemas[j] as! NSDictionary
+                let titulo = (diccProblema.value(forKey: "titulo") as! String)
+                let redaccionP = (diccProblema.value(forKey: "redaccion") as! String)
+                let respuesta = (diccProblema.value(forKey: "respuesta") as! Double)
+                
+                let problema = Problema(titulo: titulo, redaccion: redaccionP, respuesta: respuesta)
+                problemas.append(problema)
+            }
+            
+            let tema = Tema(nombre: nombre, redaccion: redaccion, imagen: UIImage(named: imagen)!, problemas: problemas)
+            
+            localTema.append(tema)
+            problemas.removeAll()
+        }
         
-        problema = Problema(titulo: "1 - Daniel - Dificil",redaccion: "Daniel lleva una lata llena de un líquido. La lata tiene un diámetro de 12(cm) y una altura de 17(cm), mientras que la masa del líquido es de 400(g). Calcula su densidad relativa.", respuesta: 0.37)
-        problemas.append(problema)
-        
-        let tema2 = Tema(nombre: "Densidad relativa", redaccion: "La densidad relativa sirve para comparar la densidad de un objeto o sustancia con la de referencia que en la mayoría de los casos es la densidad del agua que se utiliza como punto de referencia.", imagen: UIImage(named: "DensidadRelativa")!, problemas: problemas)
-            localTema.append(tema2)
         return localTema
 /*
         problema = Problema(titulo: "Extra",redaccion: "Andrea (1) y Carolina (2) tienen cada una un cilindro y quieren saber cuál cilindro tiene mayor densidad. El cilindro de Andrea (1) pesa 320 g y tiene un volumen de 1050 cm³ mientras que el cilindro de Carolina (2) pesa 2000 g y tiene un volumen de 500 cm³. ¿Cuál cilindro tiene mayor densidad?", respuesta: 2)

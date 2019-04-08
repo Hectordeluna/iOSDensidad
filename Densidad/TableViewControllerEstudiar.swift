@@ -38,12 +38,16 @@ class TableViewControllerEstudiar: UITableViewController {
         return temas.count
     }
 
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "idCell", for: indexPath)
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> EstudiarTableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "idCell", for: indexPath) as! EstudiarTableViewCell
 
-        cell.textLabel?.text = temas[indexPath.row].nombre
+        cell.lblTitulo.text = temas[indexPath.row].nombre
 
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100
     }
 
     /*
