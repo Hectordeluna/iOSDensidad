@@ -24,6 +24,8 @@ class TableViewControllerEstudiar: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
         info = Informacion()
         temas = info.getTemas()
+    
+
     }
 
     // MARK: - Table view data source
@@ -47,7 +49,7 @@ class TableViewControllerEstudiar: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 100
+        return 140
     }
 
     /*
