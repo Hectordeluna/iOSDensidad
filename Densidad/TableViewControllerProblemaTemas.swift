@@ -96,6 +96,7 @@ class TableViewControllerProblemaTemas: UITableViewController {
         let vista = segue.destination as! TableViewControllerProblemas
         if let index = tableView.indexPathForSelectedRow {
             vista.problemas = temas[index.row].problemas
+            vista.tema = temas[index.row].nombre
         }
     }
     

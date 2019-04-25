@@ -19,7 +19,7 @@ class ViewControllerProblema: UIViewController {
     @IBOutlet weak var tfRespuesta: UITextField!
     @IBOutlet weak var lblSolucion: UILabel!
     
-    
+    var tema: String!
     var problemas = [Problema]()
     var pregunta : String!
     var respuesta : Double!
@@ -36,6 +36,7 @@ class ViewControllerProblema: UIViewController {
 
         // Do any additional setup after loading the view.
         cargarPregunta()
+        self.title = tema
     }
     
     @IBAction func probarRespuesta(_ sender: Any) {

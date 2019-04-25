@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		475D826B225B10DA00C1B908 /* Preguntas.plist in Resources */ = {isa = PBXBuildFile; fileRef = 475D826A225B10DA00C1B908 /* Preguntas.plist */; };
 		475D8295225B9CA700C1B908 /* EstudiarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475D8294225B9CA700C1B908 /* EstudiarTableViewCell.swift */; };
+		4766330F22721E73004770CD /* SimuladorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4766330E22721E73004770CD /* SimuladorTableViewCell.swift */; };
 		4772B9C122485EAA00C7AEF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4772B9C022485EAA00C7AEF9 /* AppDelegate.swift */; };
 		4772B9C822485EAA00C7AEF9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4772B9C622485EAA00C7AEF9 /* Main.storyboard */; };
 		4772B9CA22485EAB00C7AEF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4772B9C922485EAB00C7AEF9 /* Assets.xcassets */; };
@@ -49,6 +50,7 @@
 /* Begin PBXFileReference section */
 		475D826A225B10DA00C1B908 /* Preguntas.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Preguntas.plist; sourceTree = "<group>"; };
 		475D8294225B9CA700C1B908 /* EstudiarTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstudiarTableViewCell.swift; sourceTree = "<group>"; };
+		4766330E22721E73004770CD /* SimuladorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimuladorTableViewCell.swift; sourceTree = "<group>"; };
 		4772B9BD22485EAA00C7AEF9 /* Densidad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Densidad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4772B9C022485EAA00C7AEF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4772B9C722485EAA00C7AEF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 			children = (
 				475D8294225B9CA700C1B908 /* EstudiarTableViewCell.swift */,
 				994F2D232272078D00A2DA70 /* ProblemasTableViewCell.swift */,
+				4766330E22721E73004770CD /* SimuladorTableViewCell.swift */,
 				4772B9C022485EAA00C7AEF9 /* AppDelegate.swift */,
 				4772B9C622485EAA00C7AEF9 /* Main.storyboard */,
 				6385036D225AD7B700E54D22 /* Sustancia.swift */,
@@ -309,6 +312,7 @@
 				4772B9F72248655C00C7AEF9 /* TableViewControllerProblemaTemas.swift in Sources */,
 				994F2D242272078D00A2DA70 /* ProblemasTableViewCell.swift in Sources */,
 				4772B9C122485EAA00C7AEF9 /* AppDelegate.swift in Sources */,
+				4766330F22721E73004770CD /* SimuladorTableViewCell.swift in Sources */,
 				475D8295225B9CA700C1B908 /* EstudiarTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

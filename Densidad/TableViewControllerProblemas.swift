@@ -11,7 +11,8 @@ import UIKit
 class TableViewControllerProblemas: UITableViewController {
     
     var problemas = [Problema]()
-
+    var tema: String!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,6 +22,7 @@ class TableViewControllerProblemas: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
         tableView.separatorStyle = .none
+        self.title = tema
 
     }
 
@@ -101,6 +103,8 @@ class TableViewControllerProblemas: UITableViewController {
         let vista = segue.destination as! ViewControllerProblema
         if let index = tableView.indexPathForSelectedRow {
             vista.problemas.append(problemas[index.row])
+            let titulo = problemas[index.row].titulo.components(separatedBy: " - ")
+            vista.tema = titulo[1]
         }
     }
     

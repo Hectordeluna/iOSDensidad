@@ -8,8 +8,8 @@
 
 import UIKit
 
-class PlaygroundViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
-
+class PlaygroundViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
     // Labels y slider
     
     @IBOutlet weak var Contenedor: UIView!
@@ -33,6 +33,8 @@ class PlaygroundViewController: UIViewController, UITableViewDelegate, UITableVi
     var densidad: Double!
     var volumen: Double!
     var masa: Double!
+    
+    var sliderWidth: Int!
     
     var number1: Int!
     var number2: Int!
@@ -66,10 +68,12 @@ class PlaygroundViewController: UIViewController, UITableViewDelegate, UITableVi
         pvolumen.text = String(volumen)
         Figura.backgroundColor = UIColor.blue
         
-        number1 = Int.random(in: 0 ..< 375)
-        labelVolCalc.text = "V= " + String(number1)
-        number2 = Int.random(in: 0 ..< 6)
-        labelMasaCalc.text = "M = " + String(format: "%.2f",Double(number1)*sustancias[number2].densidad)
+        sliderWidth = Int(pslider.frame.width)
+        
+        number1 = Int.random(in: 0 ..< sliderWidth)
+        labelVolCalc.text =  String(number1)
+        number2 = Int.random(in: 0 ..< sustancias.count)
+        labelMasaCalc.text =  String(format: "%.2f",Double(number1)*sustancias[number2].densidad)
         number3 = Double(number1)*sustancias[number2].densidad
         
 
@@ -77,15 +81,15 @@ class PlaygroundViewController: UIViewController, UITableViewDelegate, UITableVi
     }
     
     @IBAction func CambiaProblema(_ sender: UIButton) {
-        number1 = Int.random(in: 0 ..< 375)
-        labelVolCalc.text = "V= " + String(number1)
-        number2 = Int.random(in: 0 ..< 6)
-        labelMasaCalc.text = "M = " + String(format: "%.2f",Double(number1)*sustancias[number2].densidad)
+        number1 = Int.random(in: 0 ..< sliderWidth)
+        labelVolCalc.text = String(number1)
+        number2 = Int.random(in: 0 ..< sustancias.count)
+        labelMasaCalc.text = String(format: "%.2f",Double(number1)*sustancias[number2].densidad)
         number3 = Double(number1)*sustancias[number2].densidad
     }
     
     @IBAction func Prueba(_ sender: UIButton) {
-        if(number3 < 0.98*masa || number3 > 1.02*masa){
+        if(number3 < 0.97*masa || number3 > 1.03*masa){
             let alert = UIAlertController(title: "Respuesta Incorrecta! Intentalo de nuevo", message: "", preferredStyle: .alert)
             
             alert.addAction(UIAlertAction(title: "Yay", style: .default, handler: nil))
@@ -98,10 +102,10 @@ class PlaygroundViewController: UIViewController, UITableViewDelegate, UITableVi
             alert.addAction(UIAlertAction(title: "Yay", style: .default, handler: nil))
             
             self.present(alert, animated: true)
-            number1 = Int.random(in: 0 ..< 375)
-            labelVolCalc.text = "V= " + String(number1)
-            number2 = Int.random(in: 0 ..< 6)
-            labelMasaCalc.text = "M = " + String(format: "%.2f",Double(number1)*sustancias[number2].densidad)
+            number1 = Int.random(in: 0 ..< sliderWidth)
+            labelVolCalc.text =  String(number1)
+            number2 = Int.random(in: 0 ..< sustancias.count)
+            labelMasaCalc.text =  String(format: "%.2f",Double(number1)*sustancias[number2].densidad)
             number3 = Double(number1)*sustancias[number2].densidad
         }
 }
@@ -113,8 +117,6 @@ class PlaygroundViewController: UIViewController, UITableViewDelegate, UITableVi
         pvolumen.text? = String(format: "%.2f", volumen)
         
         masa = densidad*volumen
-        pmasa.text = String(format: "%.2f", masa)
-        
         
         Figura.frame.origin.x = (Contenedor.frame.size.width / 2) - ((Contenedor.frame.size.width / 2) * CGFloat(sender.value))
          Figura.frame.origin.y = (Contenedor.frame.size.height / 2) - ((Contenedor.frame.size.height / 2) * CGFloat(sender.value))
@@ -131,9 +133,9 @@ class PlaygroundViewController: UIViewController, UITableViewDelegate, UITableVi
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell")!
-        cell.backgroundColor = sustancias[indexPath.row].color.withAlphaComponent(0.75)
-        cell.textLabel?.text =  sustancias[indexPath.row].nombre + ", D = " + String(format: "%.2f",sustancias[indexPath.row].densidad)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! SimuladorTableViewCell
+        cell.vColor.backgroundColor = sustancias[indexPath.row].color.withAlphaComponent(0.75)
+        cell.lblNombre.text =  sustancias[indexPath.row].nombre + " = " + String(format: "%.2f",sustancias[indexPath.row].densidad)
         return cell
     }
     
@@ -170,7 +172,7 @@ class PlaygroundViewController: UIViewController, UITableViewDelegate, UITableVi
 //
 //    //HEIGHT
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 50
+        return 70
     }
 //
     

@@ -10,7 +10,6 @@ import UIKit
 
 class ViewControllerEstudiar: UIViewController {
 
-    @IBOutlet weak var lblTituloTema: UILabel!
     @IBOutlet weak var imgTema: UIImageView!
     @IBOutlet weak var txtInformacion: UITextView!
     
@@ -22,9 +21,10 @@ class ViewControllerEstudiar: UIViewController {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
-        lblTituloTema.text = titulo
+        //lblTituloTema.text = titulo
         imgTema.image = imagen
         txtInformacion.text = informacion
+        self.title = titulo
     }
     
     /*
