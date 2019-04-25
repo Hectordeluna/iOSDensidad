@@ -22,6 +22,7 @@
 		4772B9F92248681700C7AEF9 /* TableViewControllerProblemas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4772B9F82248681700C7AEF9 /* TableViewControllerProblemas.swift */; };
 		6385036C225AD2E100E54D22 /* PlaygroundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6385036B225AD2E100E54D22 /* PlaygroundViewController.swift */; };
 		6385036E225AD7B700E54D22 /* Sustancia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6385036D225AD7B700E54D22 /* Sustancia.swift */; };
+		994F2D242272078D00A2DA70 /* ProblemasTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994F2D232272078D00A2DA70 /* ProblemasTableViewCell.swift */; };
 		996476102248772600273227 /* Problema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9964760F2248772600273227 /* Problema.swift */; };
 		9964761222487A8B00273227 /* Tema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9964761122487A8B00273227 /* Tema.swift */; };
 		9964761422487B9300273227 /* Informacion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9964761322487B9300273227 /* Informacion.swift */; };
@@ -67,6 +68,7 @@
 		4772B9F82248681700C7AEF9 /* TableViewControllerProblemas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewControllerProblemas.swift; sourceTree = "<group>"; };
 		6385036B225AD2E100E54D22 /* PlaygroundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaygroundViewController.swift; sourceTree = "<group>"; };
 		6385036D225AD7B700E54D22 /* Sustancia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sustancia.swift; sourceTree = "<group>"; };
+		994F2D232272078D00A2DA70 /* ProblemasTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProblemasTableViewCell.swift; sourceTree = "<group>"; };
 		9964760F2248772600273227 /* Problema.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problema.swift; sourceTree = "<group>"; };
 		9964761122487A8B00273227 /* Tema.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tema.swift; sourceTree = "<group>"; };
 		9964761322487B9300273227 /* Informacion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Informacion.swift; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				475D8294225B9CA700C1B908 /* EstudiarTableViewCell.swift */,
+				994F2D232272078D00A2DA70 /* ProblemasTableViewCell.swift */,
 				4772B9C022485EAA00C7AEF9 /* AppDelegate.swift */,
 				4772B9C622485EAA00C7AEF9 /* Main.storyboard */,
 				6385036D225AD7B700E54D22 /* Sustancia.swift */,
@@ -304,6 +307,7 @@
 				6385036E225AD7B700E54D22 /* Sustancia.swift in Sources */,
 				996476102248772600273227 /* Problema.swift in Sources */,
 				4772B9F72248655C00C7AEF9 /* TableViewControllerProblemaTemas.swift in Sources */,
+				994F2D242272078D00A2DA70 /* ProblemasTableViewCell.swift in Sources */,
 				4772B9C122485EAA00C7AEF9 /* AppDelegate.swift in Sources */,
 				475D8295225B9CA700C1B908 /* EstudiarTableViewCell.swift in Sources */,
 			);

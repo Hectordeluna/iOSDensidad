@@ -25,6 +25,7 @@ class TableViewControllerEstudiar: UITableViewController {
         info = Informacion()
         temas = info.getTemas()
     
+        tableView.separatorStyle = .none
 
     }
 

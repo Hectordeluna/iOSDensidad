@@ -20,7 +20,8 @@ class TableViewControllerProblemas: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
-        
+        tableView.separatorStyle = .none
+
     }
 
     // MARK: - Table view data source
@@ -35,10 +36,18 @@ class TableViewControllerProblemas: UITableViewController {
         return problemas.count
     }
 
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> EstudiarTableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "idCell", for: indexPath) as! EstudiarTableViewCell
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> ProblemasTableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "idCell", for: indexPath) as! ProblemasTableViewCell
+        
+        
+        let titulo = problemas[indexPath.row].titulo.components(separatedBy: " - ")
+        print(titulo)
+        
 
-        cell.lblTitulo3.text = problemas[indexPath.row].titulo
+        cell.lblTitulo3.text = titulo[1]
+        cell.numero.text = titulo[0]
+        cell.dificultad.text = titulo[2]
+        
 
         return cell
     }

@@ -23,6 +23,8 @@ class TableViewControllerProblemaTemas: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
         info = Informacion()
         temas = info.getTemas()
+        tableView.separatorStyle = .none
+
     }
 
     // MARK: - Table view data source
