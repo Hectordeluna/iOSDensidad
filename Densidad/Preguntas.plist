@@ -15,9 +15,11 @@
 				<key>titulo</key>
 				<string>1 - Juan - Facil</string>
 				<key>redaccion</key>
-				<string>Juan trabaja en un laboratorio calculando la densidad de ciertos objetos. Él tiene que calcular la densidad de un objeto cuyo peso es 350(g) y su capacidad es de 700 (cm³) ¿Cuál es la densidad del objeto?</string>
+				<string>Juan trabaja en un laboratorio calculando la densidad de ciertos objetos. Él tiene que calcular la densidad de un objeto cuyo peso es 350 (g) y su capacidad es de 700 (cm³) ¿Cuál es la densidad del objeto?</string>
 				<key>respuesta</key>
 				<real>0.33</real>
+				<key>dificultad</key>
+				<string></string>
 			</dict>
 			<dict>
 				<key>titulo</key>
@@ -26,25 +28,191 @@
 				<string>Un cilindro tiene un diámetro de 15(cm) y una altura de 14(cm), mientras que la masa del líquido que contiene es de 250(g). Calcula su densidad</string>
 				<key>respuesta</key>
 				<real>0.32</real>
+				<key>dificultad</key>
+				<string></string>
 			</dict>
 		</array>
 	</dict>
 	<dict>
 		<key>nombre</key>
-		<string>Densidad Relativa</string>
+		<string>Densidad lineal</string>
 		<key>redaccion</key>
-		<string>La densidad relativa sirve para comparar la densidad de un objeto o sustancia con la de referencia que en la mayoría de los casos es la densidad del agua que se utiliza como punto de referencia.</string>
+		<string>La masa del objeto dividida entre su longitud. Se utiliza cuando dos lados del objetos  son muy cortos en comparación por ejemplo los cables de corriente.</string>
 		<key>imagen</key>
 		<string>DensidadRelativa</string>
 		<key>Problemas</key>
 		<array>
 			<dict>
 				<key>titulo</key>
-				<string>1 - Daniel - Dificil</string>
+				<string>Encuentra densidad</string>
 				<key>redaccion</key>
-				<string>Daniel lleva una lata llena de un líquido. La lata tiene un diámetro de 12(cm) y una altura de 17(cm), mientras que la masa del líquido es de 400(g). Calcula su densidad relativa.</string>
+				<string>Encuentra la densidad lineal de {o} con masa de {m} y longitud {l}</string>
 				<key>respuesta</key>
 				<real>0.37</real>
+				<key>dificultad</key>
+				<string>facil</string>
+			</dict>
+			<dict>
+				<key>titulo</key>
+				<string>Encuentra longitud</string>
+				<key>redaccion</key>
+				<string>Encuentra la longitud de {o} con densidad {d} y masa {m}</string>
+				<key>respuesta</key>
+				<real>0.37</real>
+				<key>dificultad</key>
+				<string>facil</string>
+			</dict>
+			<dict>
+				<key>titulo</key>
+				<string>Encuentra masa</string>
+				<key>redaccion</key>
+				<string>Encuentra la masa del {o} con longitud {l} y densidad {d}</string>
+				<key>respuesta</key>
+				<real>0.37</real>
+				<key>dificultad</key>
+				<string>facil</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>nombre</key>
+		<string>Densidad superficial</string>
+		<key>redaccion</key>
+		<string>La masa dividida entre el área del objeto. Se utiliza cuando un de los lados es más corto, por ejemplo las hojas de papel.</string>
+		<key>imagen</key>
+		<string>DensidadRelativa</string>
+		<key>Problemas</key>
+		<array>
+			<dict>
+				<key>titulo</key>
+				<string>Encuentra densidad</string>
+				<key>redaccion</key>
+				<string>Encuentra la densidad superficial dado que {o} tiene una masa {m} y una área {a}</string>
+				<key>respuesta</key>
+				<real>0.37</real>
+				<key>dificultad</key>
+				<string>facil</string>
+			</dict>
+			<dict>
+				<key>titulo</key>
+				<string>Encuentra masa</string>
+				<key>redaccion</key>
+				<string>Encuentra la masa de {o} que tiene una densidad {d} y un área {a}</string>
+				<key>respuesta</key>
+				<real>0.37</real>
+				<key>dificultad</key>
+				<string>facil</string>
+			</dict>
+			<dict>
+				<key>titulo</key>
+				<string>Encuentra área</string>
+				<key>redaccion</key>
+				<string>Encuentra el área de {o} que tiene una densidad {d} y un área {a}</string>
+				<key>respuesta</key>
+				<real>0.37</real>
+				<key>dificultad</key>
+				<string>facil</string>
+			</dict>
+			<dict>
+				<key>titulo</key>
+				<string>Encuentra densidad</string>
+				<key>redaccion</key>
+				<string>Encuentra la densidad superficial dado que el {o} tiene un largo {l} y un ancho {a} y una masa de {m}</string>
+				<key>respuesta</key>
+				<real>0.37</real>
+				<key>dificultad</key>
+				<string>medio</string>
+			</dict>
+			<dict>
+				<key>titulo</key>
+				<string>Encuentra masa</string>
+				<key>redaccion</key>
+				<string>Encuentra la masa dado que el {o} tiene un largo {l} y un ancho {a} y una densidad superficial de {d}</string>
+				<key>respuesta</key>
+				<real>0.37</real>
+				<key>dificultad</key>
+				<string>medio</string>
+			</dict>
+			<dict>
+				<key>titulo</key>
+				<string>Encuentra área</string>
+				<key>redaccion</key>
+				<string>Encuentra el área dado que el {o} tiene un largo {l} y un ancho {a} y una densidad superficial de {d}</string>
+				<key>respuesta</key>
+				<real>0.37</real>
+				<key>dificultad</key>
+				<string>medio</string>
+			</dict>
+			<dict>
+				<key>titulo</key>
+				<string>Encuentra densidad</string>
+				<key>redaccion</key>
+				<string>Si un rectángulo tiene un largo de {l} y un ancho {n} que el largo con una masa {m}, cual el la densidad superficial</string>
+				<key>respuesta</key>
+				<real>0.37</real>
+				<key>dificultad</key>
+				<string>dificil</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>nombre</key>
+		<string>Densidad volumétrica</string>
+		<key>redaccion</key>
+		<string>La masa dividida entre el volumen de un objeto. Se utiliza cuando quieres saber cuánta densidad hay dentro de un objeto como los vasos o cajas que estan rellenas.</string>
+		<key>imagen</key>
+		<string>DensidadRelativa</string>
+		<key>Problemas</key>
+		<array>
+			<dict>
+				<key>titulo</key>
+				<string>Encuentra densidad</string>
+				<key>redaccion</key>
+				<string>Encuentra la densidad voluméntica de {o} que tiene un volumen {v} y una masa {m}</string>
+				<key>respuesta</key>
+				<real>0.37</real>
+				<key>dificultad</key>
+				<string>facil</string>
+			</dict>
+			<dict>
+				<key>titulo</key>
+				<string>Encuentra masa</string>
+				<key>redaccion</key>
+				<string>Encuentra la masa de {o} que tiene un volumen {v} y una densidad volumentrica {d}</string>
+				<key>respuesta</key>
+				<real>0.37</real>
+				<key>dificultad</key>
+				<string>facil</string>
+			</dict>
+			<dict>
+				<key>titulo</key>
+				<string>Encuentra densidad</string>
+				<key>redaccion</key>
+				<string>Encuentra la densidad volumétrica de {o} que tiene un ancho {n}, largo {l} y altura {h} con una masa {m}</string>
+				<key>respuesta</key>
+				<real>0.37</real>
+				<key>dificultad</key>
+				<string>medio</string>
+			</dict>
+			<dict>
+				<key>titulo</key>
+				<string>Densidad esfera</string>
+				<key>redaccion</key>
+				<string>Encuentra la densidad volumétrica de una esfera que tiene un radio {x} y una masa {m}</string>
+				<key>respuesta</key>
+				<real>0.37</real>
+				<key>dificultad</key>
+				<string>medio</string>
+			</dict>
+			<dict>
+				<key>titulo</key>
+				<string>Densidad cono</string>
+				<key>redaccion</key>
+				<string>Encuentra la densidad volumétrica de un cono que tiene una altura {h}, un radio {l} con una masa {m}</string>
+				<key>respuesta</key>
+				<real>0.37</real>
+				<key>dificultad</key>
+				<string>medio</string>
 			</dict>
 		</array>
 	</dict>

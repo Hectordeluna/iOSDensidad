@@ -42,13 +42,22 @@ class TableViewControllerProblemas: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "idCell", for: indexPath) as! ProblemasTableViewCell
         
         
-        let titulo = problemas[indexPath.row].titulo.components(separatedBy: " - ")
-        print(titulo)
+        //let titulo = problemas[indexPath.row].titulo.components(separatedBy: " - ")
+        //print(titulo)
         
 
-        cell.lblTitulo3.text = titulo[1]
-        cell.numero.text = titulo[0]
-        cell.dificultad.text = titulo[2]
+        cell.lblTitulo3.text = problemas[indexPath.row].titulo
+        cell.numero.text = String(describing: (indexPath.row + 1))
+        cell.dificultad.text = problemas[indexPath.row].dificultad
+        if problemas[indexPath.row].dificultad == "facil" {
+            cell.viewColor.backgroundColor = .green
+        }
+        else if problemas[indexPath.row].dificultad == "medio" {
+            cell.viewColor.backgroundColor = .yellow
+        }
+        else if problemas[indexPath.row].dificultad == "dificil" {
+            cell.viewColor.backgroundColor = .red
+        }
         
 
         return cell
@@ -103,8 +112,7 @@ class TableViewControllerProblemas: UITableViewController {
         let vista = segue.destination as! ViewControllerProblema
         if let index = tableView.indexPathForSelectedRow {
             vista.problemas.append(problemas[index.row])
-            let titulo = problemas[index.row].titulo.components(separatedBy: " - ")
-            vista.tema = titulo[1]
+            vista.tema = problemas[index.row].titulo
         }
     }
     

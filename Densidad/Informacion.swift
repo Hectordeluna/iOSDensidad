@@ -34,8 +34,9 @@ class Informacion: NSObject {
                 let titulo = (diccProblema.value(forKey: "titulo") as! String)
                 let redaccionP = (diccProblema.value(forKey: "redaccion") as! String)
                 let respuesta = (diccProblema.value(forKey: "respuesta") as! Double)
+                let dificultad = (diccProblema.value(forKey: "dificultad") as! String)
                 
-                let problema = Problema(titulo: titulo, redaccion: redaccionP, respuesta: respuesta)
+                let problema = Problema(titulo: titulo, redaccion: redaccionP, respuesta: respuesta, dificultad: dificultad)
                 problemas.append(problema)
             }
             

@@ -14,7 +14,8 @@ class ProblemasTableViewCell: UITableViewCell {
     @IBOutlet weak var numero: UILabel!
     @IBOutlet weak var lblTitulo3: UILabel!
     @IBOutlet weak var viewBg: UIView!
-
+    @IBOutlet weak var viewColor: UIView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         viewBg.layer.cornerRadius = 10
