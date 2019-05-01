@@ -14,12 +14,14 @@ class Problema: NSObject {
     var respuesta : Double!
     var titulo : String!
     var dificultad: String!
+    var formula : String!
     
-    init(titulo : String, redaccion : String, respuesta : Double, dificultad : String) {
+    init(titulo : String, redaccion : String, respuesta : Double, dificultad : String, formula : String!) {
         self.titulo = titulo
         self.redaccion = redaccion
         self.respuesta = respuesta
         self.dificultad = dificultad
+        self.formula = formula
     }
     
 

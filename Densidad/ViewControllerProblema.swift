@@ -12,7 +12,14 @@ protocol examenProblem {
     func calificacion(calif : Double)
 }
 
+extension String {
+    var expression: NSExpression {
+        return NSExpression(format: self)
+    }
+}
 class ViewControllerProblema: UIViewController {
+    
+
 
     @IBOutlet weak var imgProblema: UIImageView!
     @IBOutlet weak var txtPregunta: UITextView!
@@ -31,6 +38,18 @@ class ViewControllerProblema: UIViewController {
     var delegate : examenProblem?
     
     
+    var masa : Double!
+    var longitud : Double!
+    var densidad : Double!
+    var area : Double!
+    var ancho : Double!
+    var volumen : Double!
+    var altura : Double!
+    var radio : Double!
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -41,7 +60,7 @@ class ViewControllerProblema: UIViewController {
     
     @IBAction func probarRespuesta(_ sender: Any) {
         if let num = Double(tfRespuesta.text!) {
-            if num == respuesta {
+            if (num >= respuesta * 0.99 && num <= respuesta * 1.01) {
                 if examen {
                     puntaje = puntaje + Double((100.0 / Double(problemas.count)))
                     print(puntaje)
@@ -69,6 +88,14 @@ class ViewControllerProblema: UIViewController {
         }
     }
     
+    func obtenerObjeto() -> String {
+        
+        let objetos = ["un Rectangulo","un Cuadrado","una esfera","un circulo","un objeto"]
+
+        let rnd = Int.random(in: 0 ... (objetos.count - 1))
+        return objetos[rnd]
+    }
+    
     func cargarPregunta() {
         if (numero >= problemas.count) {
             self.delegate?.calificacion(calif: puntaje)
@@ -76,8 +103,45 @@ class ViewControllerProblema: UIViewController {
             return
         }
         
-        txtPregunta.text = problemas[numero].redaccion
-        respuesta = problemas[numero].respuesta
+        var redaccion = problemas[numero].redaccion!
+        
+        masa = Double(Int.random(in: 1 ... 21))
+        longitud = Double(Int.random(in: 1 ... 21))
+        densidad = Double(Int.random(in: 1 ... 21))
+        area = Double(Int.random(in: 1 ... 21))
+        ancho = Double(Int.random(in: 1 ... 21))
+        volumen = Double(Int.random(in: 1 ... 21))
+        altura = Double(Int.random(in: 1 ... 21))
+        radio = Double(Int.random(in: 1 ... 21))
+
+
+        let diccionario = ["{m}": masa, "{l}" : longitud, "{d}" : densidad, "{a}" : area, "{n}" : ancho, "{v}" : volumen, "{h}" : altura, "{x}" : radio]
+        
+        
+        var formulaValue = problemas[numero].formula!
+        for (originalWord, newWord) in diccionario {
+            formulaValue = formulaValue.replacingOccurrences(of:originalWord, with:String(format:"%f", newWord!), options: .literal, range: nil)
+        }
+        
+        let expresion = NSExpression(format: formulaValue)
+        print(expresion)
+
+        if let resultado = expresion.expressionValue(with: nil, context: nil) as? Double {
+            respuesta = resultado
+            print(respuesta)
+        }
+        /*
+        if let resultado = problemas[numero].formula.expression.expressionValue(with: diccionario, context: nil) as? Double {
+            
+        }*/
+        
+        for (originalWord, newWord) in diccionario {
+            redaccion = redaccion.replacingOccurrences(of:originalWord, with:String(format:"%.2f", newWord!), options: .literal, range: nil)
+        }
+        redaccion = redaccion.replacingOccurrences(of:"{o}", with:obtenerObjeto(), options: .literal, range: nil)
+
+        txtPregunta.text = redaccion
+        //respuesta = problemas[numero].respuesta
     }
     
     

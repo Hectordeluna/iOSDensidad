@@ -20,6 +20,8 @@
 				<real>0.33</real>
 				<key>dificultad</key>
 				<string></string>
+				<key>formula</key>
+				<string>{m} / {a}</string>
 			</dict>
 			<dict>
 				<key>titulo</key>
@@ -30,6 +32,8 @@
 				<real>0.32</real>
 				<key>dificultad</key>
 				<string></string>
+				<key>formula</key>
+				<string>{d} * {d}</string>
 			</dict>
 		</array>
 	</dict>
@@ -51,6 +55,8 @@
 				<real>0.37</real>
 				<key>dificultad</key>
 				<string>facil</string>
+				<key>formula</key>
+				<string>{m} / {l}</string>
 			</dict>
 			<dict>
 				<key>titulo</key>
@@ -61,16 +67,20 @@
 				<real>0.37</real>
 				<key>dificultad</key>
 				<string>facil</string>
+				<key>formula</key>
+				<string>{m} / {d}</string>
 			</dict>
 			<dict>
 				<key>titulo</key>
 				<string>Encuentra masa</string>
 				<key>redaccion</key>
-				<string>Encuentra la masa del {o} con longitud {l} y densidad {d}</string>
+				<string>Encuentra la masa de {o} con longitud {l} y densidad {d}</string>
 				<key>respuesta</key>
 				<real>0.37</real>
 				<key>dificultad</key>
 				<string>facil</string>
+				<key>formula</key>
+				<string>{l} * {d}</string>
 			</dict>
 		</array>
 	</dict>
@@ -92,6 +102,8 @@
 				<real>0.37</real>
 				<key>dificultad</key>
 				<string>facil</string>
+				<key>formula</key>
+				<string>{m} / {a}</string>
 			</dict>
 			<dict>
 				<key>titulo</key>
@@ -102,56 +114,56 @@
 				<real>0.37</real>
 				<key>dificultad</key>
 				<string>facil</string>
+				<key>formula</key>
+				<string>{d} * {a}</string>
 			</dict>
 			<dict>
 				<key>titulo</key>
 				<string>Encuentra área</string>
 				<key>redaccion</key>
-				<string>Encuentra el área de {o} que tiene una densidad {d} y un área {a}</string>
+				<string>Encuentra el área de {o} que tiene una densidad {d} y una masa {m}</string>
 				<key>respuesta</key>
 				<real>0.37</real>
 				<key>dificultad</key>
 				<string>facil</string>
+				<key>formula</key>
+				<string>{m} / {d}</string>
 			</dict>
 			<dict>
 				<key>titulo</key>
 				<string>Encuentra densidad</string>
 				<key>redaccion</key>
-				<string>Encuentra la densidad superficial dado que el {o} tiene un largo {l} y un ancho {a} y una masa de {m}</string>
+				<string>Encuentra la densidad superficial dado que {o} tiene un largo {l} y un ancho {a} y una masa de {m}</string>
 				<key>respuesta</key>
 				<real>0.37</real>
 				<key>dificultad</key>
 				<string>medio</string>
+				<key>formula</key>
+				<string>{m} / ({l} * {a})</string>
 			</dict>
 			<dict>
 				<key>titulo</key>
 				<string>Encuentra masa</string>
 				<key>redaccion</key>
-				<string>Encuentra la masa dado que el {o} tiene un largo {l} y un ancho {a} y una densidad superficial de {d}</string>
+				<string>Encuentra la masa dado que {o} tiene un largo {l} y un ancho {a} y una densidad superficial de {d}</string>
 				<key>respuesta</key>
 				<real>0.37</real>
 				<key>dificultad</key>
 				<string>medio</string>
-			</dict>
-			<dict>
-				<key>titulo</key>
-				<string>Encuentra área</string>
-				<key>redaccion</key>
-				<string>Encuentra el área dado que el {o} tiene un largo {l} y un ancho {a} y una densidad superficial de {d}</string>
-				<key>respuesta</key>
-				<real>0.37</real>
-				<key>dificultad</key>
-				<string>medio</string>
+				<key>formula</key>
+				<string>{d} * ({l} * {a})</string>
 			</dict>
 			<dict>
 				<key>titulo</key>
 				<string>Encuentra densidad</string>
 				<key>redaccion</key>
-				<string>Si un rectángulo tiene un largo de {l} y un ancho {n} que el largo con una masa {m}, cual el la densidad superficial</string>
+				<string>Si un rectángulo tiene un largo de {l} y un ancho {a} que el largo con una masa {m}, cual el la densidad superficial</string>
 				<key>respuesta</key>
 				<real>0.37</real>
 				<key>dificultad</key>
 				<string>dificil</string>
+				<key>formula</key>
+				<string>{m} / ({l} * {a})</string>
 			</dict>
 		</array>
 	</dict>
@@ -173,6 +185,8 @@
 				<real>0.37</real>
 				<key>dificultad</key>
 				<string>facil</string>
+				<key>formula</key>
+				<string>{m} / {v}</string>
 			</dict>
 			<dict>
 				<key>titulo</key>
@@ -183,16 +197,20 @@
 				<real>0.37</real>
 				<key>dificultad</key>
 				<string>facil</string>
+				<key>formula</key>
+				<string>{v} * {d}</string>
 			</dict>
 			<dict>
 				<key>titulo</key>
 				<string>Encuentra densidad</string>
 				<key>redaccion</key>
-				<string>Encuentra la densidad volumétrica de {o} que tiene un ancho {n}, largo {l} y altura {h} con una masa {m}</string>
+				<string>Encuentra la densidad volumétrica de un rectangulo que tiene un ancho {n}, largo {l} y altura {h} con una masa {m}</string>
 				<key>respuesta</key>
 				<real>0.37</real>
 				<key>dificultad</key>
 				<string>medio</string>
+				<key>formula</key>
+				<string>{m} / ({n} * {l} * {h})</string>
 			</dict>
 			<dict>
 				<key>titulo</key>
@@ -203,16 +221,20 @@
 				<real>0.37</real>
 				<key>dificultad</key>
 				<string>medio</string>
+				<key>formula</key>
+				<string>{m} / {x}</string>
 			</dict>
 			<dict>
 				<key>titulo</key>
 				<string>Densidad cono</string>
 				<key>redaccion</key>
-				<string>Encuentra la densidad volumétrica de un cono que tiene una altura {h}, un radio {l} con una masa {m}</string>
+				<string>Encuentra la densidad volumétrica de un cono que tiene una altura {h}, un radio {x} con una masa {m}</string>
 				<key>respuesta</key>
 				<real>0.37</real>
 				<key>dificultad</key>
 				<string>medio</string>
+				<key>formula</key>
+				<string>{m} / ({h} * {x})</string>
 			</dict>
 		</array>
 	</dict>
