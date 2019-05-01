@@ -65,6 +65,7 @@ class ViewControllerProblema: UIViewController {
                     puntaje = puntaje + Double((100.0 / Double(problemas.count)))
                     print(puntaje)
                     numero = numero + 1
+                    tfRespuesta.text = ""
                     cargarPregunta()
                 } else {
                 let alert = UIAlertController(title: "Respuesta correcta!", message: "", preferredStyle: .alert)
@@ -76,6 +77,7 @@ class ViewControllerProblema: UIViewController {
             } else {
                 if examen {
                     numero = numero + 1
+                    tfRespuesta.text = ""
                     cargarPregunta()
                 } else {
                 let alert = UIAlertController(title: "Respuesta incorrecta!", message: "Vuelvelo a intentar!", preferredStyle: .alert)
@@ -90,7 +92,7 @@ class ViewControllerProblema: UIViewController {
     
     func obtenerObjeto() -> String {
         
-        let objetos = ["un Rectangulo","un Cuadrado","una esfera","un circulo","un objeto"]
+        let objetos = ["un rectangulo","un cuadrado","una esfera","un circulo","un objeto"]
 
         let rnd = Int.random(in: 0 ... (objetos.count - 1))
         return objetos[rnd]

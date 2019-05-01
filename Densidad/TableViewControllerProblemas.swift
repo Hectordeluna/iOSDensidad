@@ -113,6 +113,7 @@ class TableViewControllerProblemas: UITableViewController {
         if let index = tableView.indexPathForSelectedRow {
             vista.problemas.append(problemas[index.row])
             vista.tema = problemas[index.row].titulo
+            
         }
     }
     
