@@ -88,6 +88,7 @@ class ViewControllerProblema: UIViewController {
                 }
             }
         }
+        tfRespuesta.text = ""
     }
     
     func obtenerObjeto() -> String {

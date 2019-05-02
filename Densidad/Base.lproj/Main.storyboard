@@ -31,7 +31,7 @@
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EgS-0s-qPy">
                                                     <rect key="frame" x="0.0" y="0.0" width="15" height="118"/>
-                                                    <color key="backgroundColor" red="0.40138329900000003" green="0.79493058809999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="backgroundColor" red="0.37204045057296753" green="0.63094502687454224" blue="0.76621818542480469" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="15" id="XpP-75-2ht"/>
                                                     </constraints>
@@ -105,7 +105,7 @@
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZpE-Cz-g3l">
                                                     <rect key="frame" x="0.0" y="0.0" width="15" height="118"/>
-                                                    <color key="backgroundColor" red="1" green="0.59462649599999995" blue="0.56453927640000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <color key="backgroundColor" red="0.89682811498641968" green="0.45274198055267334" blue="0.35019460320472717" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="15" id="Y0o-fd-7HB"/>
                                                     </constraints>
@@ -178,7 +178,7 @@
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lbk-J4-EDb">
                                                     <rect key="frame" x="0.0" y="0.0" width="15" height="118"/>
-                                                    <color key="backgroundColor" red="0.63552279219999996" green="0.72930562489999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <color key="backgroundColor" red="0.49907445907592773" green="0.6788560152053833" blue="0.46497398614883423" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="15" id="r4u-tT-UYO"/>
                                                     </constraints>
@@ -314,15 +314,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Problema" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f2C-oO-aln">
-                                <rect key="frame" x="30" y="64" width="199" height="44"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="f2C-oO-aln" secondAttribute="height" multiplier="199:44" id="SSv-hX-feg"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eg7-K2-yhP">
                                 <rect key="frame" x="164" y="318" width="48" height="30"/>
                                 <state key="normal" title="Probar"/>
@@ -330,25 +321,44 @@
                                     <action selector="probarRespuesta:" destination="EH8-e3-ej6" eventType="touchUpInside" id="bie-a5-hCV"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LyL-ey-6oQ">
+                                <rect key="frame" x="0.0" y="0.0" width="376" height="116"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Problema" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f2C-oO-aln">
+                                        <rect key="frame" x="34" y="57" width="342" height="59"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.62706321477890015" green="0.35539102554321289" blue="0.67125886678695679" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="f2C-oO-aln" secondAttribute="trailing" id="DH2-fs-im9"/>
+                                    <constraint firstAttribute="height" constant="116" id="VvA-qb-vUh"/>
+                                    <constraint firstItem="f2C-oO-aln" firstAttribute="top" secondItem="LyL-ey-6oQ" secondAttribute="top" constant="57" id="VyE-a8-gxQ"/>
+                                    <constraint firstItem="f2C-oO-aln" firstAttribute="leading" secondItem="LyL-ey-6oQ" secondAttribute="leading" constant="34" id="Wud-W5-MnU"/>
+                                    <constraint firstAttribute="bottom" secondItem="f2C-oO-aln" secondAttribute="bottom" id="sRf-16-DBQ"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Qzc-Np-vCX" firstAttribute="centerY" secondItem="hkJ-Gf-N3T" secondAttribute="centerY" id="1vi-AQ-YU3"/>
+                            <constraint firstItem="LyL-ey-6oQ" firstAttribute="top" secondItem="Q0s-LN-ZBj" secondAttribute="top" id="4P0-hO-w5o"/>
                             <constraint firstItem="zOL-wx-fk6" firstAttribute="trailing" secondItem="eg7-K2-yhP" secondAttribute="trailing" constant="163" id="4k3-Xn-rbb"/>
-                            <constraint firstItem="zOL-wx-fk6" firstAttribute="trailing" secondItem="f2C-oO-aln" secondAttribute="trailing" constant="146" id="Awc-cu-cW8"/>
+                            <constraint firstItem="5YY-oA-8Uo" firstAttribute="top" secondItem="LyL-ey-6oQ" secondAttribute="bottom" constant="11" id="6mW-HO-jkH"/>
+                            <constraint firstItem="LyL-ey-6oQ" firstAttribute="centerX" secondItem="5YY-oA-8Uo" secondAttribute="centerX" id="BaD-ij-YHB"/>
                             <constraint firstItem="Qzc-Np-vCX" firstAttribute="leading" secondItem="5YY-oA-8Uo" secondAttribute="leading" id="BvJ-8T-LiO"/>
-                            <constraint firstItem="f2C-oO-aln" firstAttribute="leading" secondItem="zOL-wx-fk6" secondAttribute="leading" constant="30" id="Dez-FM-L2W"/>
                             <constraint firstItem="hkJ-Gf-N3T" firstAttribute="leading" secondItem="Qzc-Np-vCX" secondAttribute="trailing" constant="32" id="FEP-h0-94s"/>
                             <constraint firstItem="hkJ-Gf-N3T" firstAttribute="top" secondItem="5YY-oA-8Uo" secondAttribute="bottom" constant="13" id="GRr-y3-VDW"/>
-                            <constraint firstItem="5YY-oA-8Uo" firstAttribute="top" secondItem="f2C-oO-aln" secondAttribute="bottom" constant="19" id="LJ7-oG-ICw"/>
                             <constraint firstItem="eg7-K2-yhP" firstAttribute="top" secondItem="5YY-oA-8Uo" secondAttribute="bottom" constant="79" id="May-4I-irs"/>
                             <constraint firstItem="hkJ-Gf-N3T" firstAttribute="leading" secondItem="Qzc-Np-vCX" secondAttribute="trailing" constant="32" id="Plv-4o-6WO"/>
-                            <constraint firstItem="5YY-oA-8Uo" firstAttribute="top" secondItem="f2C-oO-aln" secondAttribute="bottom" constant="19" id="c7q-z0-Weg"/>
+                            <constraint firstItem="LyL-ey-6oQ" firstAttribute="leading" secondItem="Q0s-LN-ZBj" secondAttribute="leading" id="bt9-RR-GiV"/>
                             <constraint firstItem="eg7-K2-yhP" firstAttribute="leading" secondItem="zOL-wx-fk6" secondAttribute="leading" constant="164" id="dKY-9b-m2T"/>
                             <constraint firstItem="Qzc-Np-vCX" firstAttribute="top" secondItem="5YY-oA-8Uo" secondAttribute="bottom" constant="17" id="kTd-Gw-uib"/>
                             <constraint firstItem="zOL-wx-fk6" firstAttribute="trailing" secondItem="5YY-oA-8Uo" secondAttribute="trailing" constant="22" id="m7y-9D-JT3"/>
                             <constraint firstItem="hkJ-Gf-N3T" firstAttribute="top" secondItem="5YY-oA-8Uo" secondAttribute="bottom" constant="13" id="sfF-L6-7Pf"/>
-                            <constraint firstItem="f2C-oO-aln" firstAttribute="top" secondItem="zOL-wx-fk6" secondAttribute="top" constant="44" id="vuN-ig-JMj"/>
+                            <constraint firstAttribute="bottom" secondItem="LyL-ey-6oQ" secondAttribute="bottom" constant="551" id="tZ8-EU-DLV"/>
                             <constraint firstItem="5YY-oA-8Uo" firstAttribute="leading" secondItem="zOL-wx-fk6" secondAttribute="leading" constant="23" id="wDt-C0-Rlm"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="zOL-wx-fk6"/>
@@ -370,6 +380,11 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="t90-G1-n5f">
                         <rect key="frame" x="0.0" y="20" width="375" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.89682811500000004" green="0.45274198059999998" blue="0.35019460320000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="y04-zW-3jc" kind="relationship" relationship="rootViewController" id="IXz-iV-Txh"/>
@@ -387,15 +402,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Examen" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kuC-Ic-tuD">
-                                <rect key="frame" x="15" y="52" width="130" height="42"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ri0-pm-YBH">
-                                <rect key="frame" x="16" y="102" width="343" height="100"/>
-                                <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="16" y="134" width="343" height="100"/>
+                                <color key="backgroundColor" red="0.62706321477890015" green="0.35539102554321289" blue="0.67125886678695679" alpha="0.78183861301369861" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="sQV-Fr-CMV"/>
                                 </constraints>
@@ -407,34 +416,53 @@
                                     <segue destination="EH8-e3-ej6" kind="show" id="18K-JB-qUL"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calificacion" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Pz-v4-i33">
-                                <rect key="frame" x="16" y="219" width="226" height="42"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wXJ-GN-5rw">
-                                <rect key="frame" x="16" y="269" width="128" height="81"/>
+                                <rect key="frame" x="16" y="309" width="0.0" height="81"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="81" id="7Nu-59-jm5"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hjt-Pc-nIV">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="116"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="bottomLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Examen" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kuC-Ic-tuD">
+                                        <rect key="frame" x="17" y="57" width="358" height="59"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.62706321477890015" green="0.35539102554321289" blue="0.67125886678695679" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="kuC-Ic-tuD" firstAttribute="leading" secondItem="hjt-Pc-nIV" secondAttribute="leading" constant="17" id="1Yv-r3-XaF"/>
+                                    <constraint firstAttribute="height" constant="116" id="Zmn-Ho-HGO"/>
+                                    <constraint firstAttribute="bottom" secondItem="kuC-Ic-tuD" secondAttribute="bottom" id="ceU-Yu-5xw"/>
+                                    <constraint firstAttribute="trailing" secondItem="kuC-Ic-tuD" secondAttribute="trailing" id="ftI-Ms-hn9"/>
+                                    <constraint firstItem="kuC-Ic-tuD" firstAttribute="top" secondItem="hjt-Pc-nIV" secondAttribute="top" constant="57" id="k1u-xh-k6d"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calificacion" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Pz-v4-i33">
+                                <rect key="frame" x="16" y="253" width="226" height="42"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="q7h-Zs-kFm" firstAttribute="trailing" secondItem="3Pz-v4-i33" secondAttribute="trailing" constant="133" id="07t-yy-9I8"/>
+                            <constraint firstItem="hjt-Pc-nIV" firstAttribute="top" secondItem="cst-7h-suC" secondAttribute="top" id="5rJ-Ez-5IO"/>
                             <constraint firstItem="3Pz-v4-i33" firstAttribute="leading" secondItem="wXJ-GN-5rw" secondAttribute="leading" id="9TA-oU-XP5"/>
-                            <constraint firstItem="kuC-Ic-tuD" firstAttribute="centerX" secondItem="wXJ-GN-5rw" secondAttribute="centerX" id="A05-Lc-dqo"/>
+                            <constraint firstAttribute="bottom" secondItem="hjt-Pc-nIV" secondAttribute="bottom" constant="551" id="DZJ-k8-Ry1"/>
                             <constraint firstItem="ri0-pm-YBH" firstAttribute="leading" secondItem="3Pz-v4-i33" secondAttribute="leading" id="Fr4-l6-F4X"/>
                             <constraint firstItem="ri0-pm-YBH" firstAttribute="trailing" secondItem="cst-7h-suC" secondAttribute="trailingMargin" id="LoG-qI-eZg"/>
-                            <constraint firstItem="kuC-Ic-tuD" firstAttribute="top" secondItem="q7h-Zs-kFm" secondAttribute="top" constant="32" id="N2r-5e-Uyu"/>
-                            <constraint firstItem="ri0-pm-YBH" firstAttribute="top" secondItem="kuC-Ic-tuD" secondAttribute="bottom" constant="8" symbolic="YES" id="OFi-yh-UcS"/>
-                            <constraint firstItem="kuC-Ic-tuD" firstAttribute="leading" secondItem="q7h-Zs-kFm" secondAttribute="leading" constant="15" id="OGN-AC-3GD"/>
                             <constraint firstItem="ri0-pm-YBH" firstAttribute="leading" secondItem="cst-7h-suC" secondAttribute="leadingMargin" id="V2n-YR-gwB"/>
-                            <constraint firstItem="wXJ-GN-5rw" firstAttribute="top" secondItem="3Pz-v4-i33" secondAttribute="bottom" constant="8" symbolic="YES" id="gnZ-pA-z1K"/>
-                            <constraint firstItem="q7h-Zs-kFm" firstAttribute="bottom" secondItem="wXJ-GN-5rw" secondAttribute="bottom" constant="268" id="rqU-wS-Eym"/>
+                            <constraint firstItem="ri0-pm-YBH" firstAttribute="top" secondItem="hjt-Pc-nIV" secondAttribute="bottom" constant="18" id="Xqi-MH-zKi"/>
+                            <constraint firstItem="wXJ-GN-5rw" firstAttribute="top" secondItem="3Pz-v4-i33" secondAttribute="bottom" constant="14" id="gnZ-pA-z1K"/>
+                            <constraint firstItem="hjt-Pc-nIV" firstAttribute="leading" secondItem="cst-7h-suC" secondAttribute="leading" id="khc-mh-UBE"/>
+                            <constraint firstItem="hjt-Pc-nIV" firstAttribute="centerX" secondItem="ri0-pm-YBH" secondAttribute="centerX" id="o6V-xU-ZPC"/>
+                            <constraint firstItem="q7h-Zs-kFm" firstAttribute="bottom" secondItem="wXJ-GN-5rw" secondAttribute="bottom" constant="228" id="rqU-wS-Eym"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="q7h-Zs-kFm"/>
                     </view>
@@ -459,13 +487,14 @@
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Ehx-Dy-Rde">
                                 <rect key="frame" x="43" y="247.5" width="291" height="335.5"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <string key="text">La cantidad de masa en un determinado volumen de una sustancia o un objeto sólido
 La densidad sirve para comparar la cantidad de masa en un volumen específico.
 La densidad relativa sirve para comparar la densidad de un objeto o sustancia con la de referencia que en la mayoría de los casos es la densidad del agua que se utiliza como punto de referencia.
 Este conocimiento te puede servir en la vida diaria como saber, porque  flotas en la playa, el vuelo de los aviones, la flotabilidad de los barcos, los ingredientes de cocina
 </string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DensidadFormula" translatesAutoresizingMaskIntoConstraints="NO" id="cw9-qO-DFQ">
@@ -514,7 +543,7 @@ Este conocimiento te puede servir en la vida diaria como saber, porque  flotas e
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="70" id="b7o-zr-BJq" customClass="SimuladorTableViewCell" customModule="Densidad" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="b7o-zr-BJq" id="EYA-Jw-d0H">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="b7o-zr-BJq" id="EYA-Jw-d0H">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="69.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
@@ -526,7 +555,7 @@ Este conocimiento te puede servir en la vida diaria como saber, porque  flotas e
                                                     </constraints>
                                                 </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kjB-T5-3jS">
-                                                    <rect key="frame" x="27" y="5" width="45" height="59.5"/>
+                                                    <rect key="frame" x="27" y="5" width="250" height="59.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="wcr-p8-gsE"/>
                                                     </constraints>
@@ -558,7 +587,7 @@ Este conocimiento te puede servir en la vida diaria como saber, porque  flotas e
                                 </connections>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Volumen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tlY-eD-aRs">
-                                <rect key="frame" x="53" y="290.5" width="69" height="21"/>
+                                <rect key="frame" x="53" y="308" width="69" height="21"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -573,10 +602,10 @@ Este conocimiento te puede servir en la vida diaria como saber, porque  flotas e
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mQT-uS-tlL">
-                                <rect key="frame" x="16" y="74" width="180.5" height="174.5"/>
+                                <rect key="frame" x="16" y="74" width="198" height="192"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VvA-BB-nnG">
-                                        <rect key="frame" x="85" y="82" width="10.5" height="10.5"/>
+                                        <rect key="frame" x="85" y="82" width="28" height="28"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="VvA-BB-nnG" secondAttribute="height" multiplier="1:1" id="Hn8-IG-kAD"/>
@@ -591,12 +620,6 @@ Este conocimiento te puede servir en la vida diaria como saber, porque  flotas e
                                     <constraint firstItem="VvA-BB-nnG" firstAttribute="top" secondItem="mQT-uS-tlL" secondAttribute="top" constant="82" id="jre-N7-Gcp"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Simulador" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v7g-zL-FJO">
-                                <rect key="frame" x="15" y="31" width="166" height="42"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E00-5V-f6a">
                                 <rect key="frame" x="241" y="547" width="118" height="30"/>
                                 <constraints>
@@ -607,7 +630,7 @@ Este conocimiento te puede servir en la vida diaria como saber, porque  flotas e
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Simula la sustancia con masa de:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E6I-J8-mIO">
-                                <rect key="frame" x="196.5" y="149.5" width="161" height="41"/>
+                                <rect key="frame" x="214" y="167" width="161" height="41"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -619,20 +642,20 @@ Este conocimiento te puede servir en la vida diaria como saber, porque  flotas e
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QQG-t1-4Kq">
-                                <rect key="frame" x="164.5" y="350.5" width="46" height="51.5"/>
+                                <rect key="frame" x="164.5" y="368" width="46" height="34"/>
                                 <state key="normal" title="Probar"/>
                                 <connections>
                                     <action selector="Prueba:" destination="HXw-Ts-HQT" eventType="touchUpInside" id="mTT-4O-mGW"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kTu-OK-5fJ">
-                                <rect key="frame" x="125" y="290.5" width="85.5" height="21"/>
+                                <rect key="frame" x="125" y="308" width="85.5" height="21"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="RqX-1Q-1oD">
-                                <rect key="frame" x="51" y="313.5" width="273" height="30"/>
+                                <rect key="frame" x="51" y="331" width="273" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="29" id="hrr-kg-Tdq"/>
                                 </constraints>
@@ -641,40 +664,52 @@ Este conocimiento te puede servir en la vida diaria como saber, porque  flotas e
                                 </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="khi-rK-T1l">
-                                <rect key="frame" x="265" y="195.5" width="43" height="21"/>
+                                <rect key="frame" x="265" y="213" width="43" height="21"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y1B-Pk-qNi">
-                                <rect key="frame" x="248" y="37" width="58" height="30"/>
-                                <state key="normal" title="Cambiar"/>
-                                <connections>
-                                    <action selector="CambiaProblema:" destination="HXw-Ts-HQT" eventType="touchUpInside" id="Q4h-tx-BWj"/>
-                                </connections>
-                            </button>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w6N-KU-JsF">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="75"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Simulador" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v7g-zL-FJO">
+                                        <rect key="frame" x="23" y="28" width="166" height="42"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y1B-Pk-qNi">
+                                        <rect key="frame" x="262" y="37" width="58" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Cambiar"/>
+                                        <connections>
+                                            <action selector="CambiaProblema:" destination="HXw-Ts-HQT" eventType="touchUpInside" id="Q4h-tx-BWj"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="kTu-OK-5fJ" firstAttribute="leading" secondItem="tlY-eD-aRs" secondAttribute="trailing" constant="3" id="02Z-x9-dmq"/>
                             <constraint firstItem="tlY-eD-aRs" firstAttribute="top" secondItem="mQT-uS-tlL" secondAttribute="bottom" constant="42" id="157-Fb-GEz"/>
-                            <constraint firstItem="y1B-Pk-qNi" firstAttribute="leading" secondItem="v7g-zL-FJO" secondAttribute="trailing" constant="67" id="5qZ-oQ-c98"/>
-                            <constraint firstItem="v7g-zL-FJO" firstAttribute="centerY" secondItem="y1B-Pk-qNi" secondAttribute="centerY" id="7q5-1z-WZr"/>
                             <constraint firstItem="QQG-t1-4Kq" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="PTm-xT-G8K" secondAttribute="leading" id="870-cc-JUl"/>
                             <constraint firstItem="tlY-eD-aRs" firstAttribute="baseline" secondItem="kTu-OK-5fJ" secondAttribute="firstBaseline" id="CDV-yo-Ijh"/>
                             <constraint firstItem="PTm-xT-G8K" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="E6I-J8-mIO" secondAttribute="trailing" id="Cnn-mr-gZg"/>
                             <constraint firstItem="QQG-t1-4Kq" firstAttribute="top" secondItem="RqX-1Q-1oD" secondAttribute="bottom" constant="8" symbolic="YES" id="DmV-qt-YUX"/>
                             <constraint firstItem="aMv-g3-YEE" firstAttribute="leading" secondItem="Ep6-ay-ucl" secondAttribute="leading" id="FNz-vK-fGW"/>
                             <constraint firstAttribute="trailing" secondItem="aMv-g3-YEE" secondAttribute="trailing" id="Fhs-4p-m0o"/>
-                            <constraint firstItem="y1B-Pk-qNi" firstAttribute="centerX" secondItem="E6I-J8-mIO" secondAttribute="centerX" id="Gb7-m9-bxG"/>
+                            <constraint firstItem="w6N-KU-JsF" firstAttribute="trailing" secondItem="aMv-g3-YEE" secondAttribute="trailing" id="Hg7-lY-5kS"/>
                             <constraint firstItem="khi-rK-T1l" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="mQT-uS-tlL" secondAttribute="trailing" constant="8" symbolic="YES" id="INj-Th-CeM"/>
                             <constraint firstItem="aMv-g3-YEE" firstAttribute="top" secondItem="QQG-t1-4Kq" secondAttribute="bottom" constant="11" id="Jfp-IK-Poh"/>
                             <constraint firstItem="PTm-xT-G8K" firstAttribute="trailing" secondItem="cOb-Ky-6o9" secondAttribute="trailing" constant="272" id="L0O-Bx-cb0"/>
                             <constraint firstItem="khi-rK-T1l" firstAttribute="top" secondItem="E6I-J8-mIO" secondAttribute="bottom" constant="5" id="LWK-gR-82m"/>
-                            <constraint firstItem="mQT-uS-tlL" firstAttribute="top" secondItem="v7g-zL-FJO" secondAttribute="bottom" constant="1" id="Ltf-Lk-gy9"/>
                             <constraint firstItem="E00-5V-f6a" firstAttribute="top" secondItem="y7o-jw-pz5" secondAttribute="bottom" constant="43" id="NlM-wA-XtU"/>
-                            <constraint firstItem="v7g-zL-FJO" firstAttribute="leading" secondItem="PTm-xT-G8K" secondAttribute="leading" constant="15" id="Pxk-47-pWg"/>
+                            <constraint firstItem="w6N-KU-JsF" firstAttribute="top" secondItem="Ep6-ay-ucl" secondAttribute="top" id="PdZ-1d-XQ3"/>
                             <constraint firstItem="E00-5V-f6a" firstAttribute="leading" secondItem="PTm-xT-G8K" secondAttribute="leading" constant="241" id="QWQ-zK-Isp"/>
+                            <constraint firstItem="w6N-KU-JsF" firstAttribute="leading" secondItem="aMv-g3-YEE" secondAttribute="leading" id="Qly-JG-MrL"/>
                             <constraint firstItem="E6I-J8-mIO" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="y7o-jw-pz5" secondAttribute="trailing" id="SvR-nF-A9g"/>
                             <constraint firstItem="RqX-1Q-1oD" firstAttribute="top" secondItem="tlY-eD-aRs" secondAttribute="bottom" constant="2" id="TSE-Vq-mnP"/>
                             <constraint firstItem="PTm-xT-G8K" firstAttribute="trailing" secondItem="khi-rK-T1l" secondAttribute="trailing" constant="67" id="ZVt-Qu-Sie"/>
@@ -685,10 +720,11 @@ Este conocimiento te puede servir en la vida diaria como saber, porque  flotas e
                             <constraint firstItem="E6I-J8-mIO" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="mQT-uS-tlL" secondAttribute="trailing" id="ep0-CH-H8k"/>
                             <constraint firstItem="cOb-Ky-6o9" firstAttribute="leading" secondItem="PTm-xT-G8K" secondAttribute="leading" constant="34" id="ezb-8s-9bb"/>
                             <constraint firstItem="tlY-eD-aRs" firstAttribute="leading" secondItem="RqX-1Q-1oD" secondAttribute="leading" id="ff4-xm-gX7"/>
-                            <constraint firstItem="v7g-zL-FJO" firstAttribute="top" secondItem="cOb-Ky-6o9" secondAttribute="bottom" constant="8" symbolic="YES" id="kTc-3c-pXj"/>
+                            <constraint firstItem="mQT-uS-tlL" firstAttribute="top" secondItem="w6N-KU-JsF" secondAttribute="bottom" constant="7" id="g1p-5o-aKA"/>
                             <constraint firstItem="cOb-Ky-6o9" firstAttribute="top" secondItem="PTm-xT-G8K" secondAttribute="top" constant="3" id="kwa-9K-jLI"/>
                             <constraint firstItem="tlY-eD-aRs" firstAttribute="baseline" secondItem="kTu-OK-5fJ" secondAttribute="baseline" id="mYr-IJ-5CP"/>
                             <constraint firstItem="tlY-eD-aRs" firstAttribute="leading" secondItem="PTm-xT-G8K" secondAttribute="leading" constant="53" id="mZJ-ik-fqZ"/>
+                            <constraint firstAttribute="bottom" secondItem="w6N-KU-JsF" secondAttribute="bottom" constant="600" id="mgU-eE-zHG"/>
                             <constraint firstItem="y7o-jw-pz5" firstAttribute="leading" secondItem="PTm-xT-G8K" secondAttribute="leading" constant="247" id="sla-nS-TWa"/>
                             <constraint firstItem="kTu-OK-5fJ" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="QQG-t1-4Kq" secondAttribute="trailing" id="uN1-qr-LSR"/>
                             <constraint firstItem="PTm-xT-G8K" firstAttribute="bottom" secondItem="E00-5V-f6a" secondAttribute="bottom" constant="41" id="xbD-Wu-VC9"/>
@@ -721,6 +757,14 @@ Este conocimiento te puede servir en la vida diaria como saber, porque  flotas e
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="Nwe-A7-2aZ">
                         <rect key="frame" x="0.0" y="20" width="375" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="0.37204045057296753" green="0.63094502687454224" blue="0.76621818542480469" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="t0h-ue-18j" kind="relationship" relationship="rootViewController" id="B9O-Xt-LgF"/>
@@ -759,6 +803,6 @@ Este conocimiento te puede servir en la vida diaria como saber, porque  flotas e
         <image name="pencil" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="18K-JB-qUL"/>
+        <segue reference="Wb0-gj-tbe"/>
     </inferredMetricsTieBreakers>
 </document>

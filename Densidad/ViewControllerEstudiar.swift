@@ -8,6 +8,8 @@
 
 import UIKit
 
+
+
 class ViewControllerEstudiar: UIViewController {
 
     @IBOutlet weak var imgTema: UIImageView!
@@ -25,6 +27,8 @@ class ViewControllerEstudiar: UIViewController {
         imgTema.image = imagen
         txtInformacion.text = informacion
         self.title = titulo
+
+        
     }
     
     /*

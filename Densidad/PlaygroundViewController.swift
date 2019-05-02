@@ -51,13 +51,13 @@ class PlaygroundViewController: UIViewController, UITableViewDelegate, UITableVi
         let o6 = Sustancia(color: UIColor.gray, nombre: "Plomo", densidad: 11.40)
         let o7 = Sustancia(color: UIColor.orange, nombre: "Marmol", densidad: 2.60)
         
+        sustancias.append(o4)
+        sustancias.append(o7)
         sustancias.append(o1)
         sustancias.append(o2)
-        sustancias.append(o3)
-        sustancias.append(o4)
         sustancias.append(o5)
         sustancias.append(o6)
-        sustancias.append(o7)
+        sustancias.append(o3)
         
         
         volumen = 200

@@ -50,13 +50,13 @@ class TableViewControllerProblemas: UITableViewController {
         cell.numero.text = String(describing: (indexPath.row + 1))
         cell.dificultad.text = problemas[indexPath.row].dificultad
         if problemas[indexPath.row].dificultad == "facil" {
-            cell.viewColor.backgroundColor = .green
+            cell.viewColor.backgroundColor = UIColor(red: 127/255.0, green: 173/255.0, blue: 119/255.0, alpha: 1)
         }
         else if problemas[indexPath.row].dificultad == "medio" {
-            cell.viewColor.backgroundColor = .yellow
+            cell.viewColor.backgroundColor = UIColor(red: 241/255.0, green: 197/255.0, blue: 49/255.0, alpha: 1)
         }
         else if problemas[indexPath.row].dificultad == "dificil" {
-            cell.viewColor.backgroundColor = .red
+            cell.viewColor.backgroundColor = UIColor(red: 229/255.0, green: 115/255.0, blue: 89/255.0, alpha: 1)
         }
         
 

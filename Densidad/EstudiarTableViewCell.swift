@@ -21,6 +21,7 @@ class EstudiarTableViewCell: UITableViewCell {
         // Initialization code
         viewBg.layer.cornerRadius = 10
         viewBg.layer.borderWidth = 0
+  
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
